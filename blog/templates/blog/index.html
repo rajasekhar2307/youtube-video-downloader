@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="login-content">
+          <form action="get" method="POST">
+            {% csrf_token %}
+            <h3 class="title">Hello!</h3>
+              <div class="input-div one">
+                 <div class="i">
+                    <i class="fa fa-youtube-play"></i>
+                 </div>
+                 <div class="div">
+                    <h5>Link</h5>
+                    <input type="text" name="link" class="input">
+                 </div>
+
+              </div>
+<!--               <div class="input-div pass">
+                 <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                 </div>
+                 <div class="div">
+                    <h5>Password</h5>
+                    <input type="password" class="input">
+                 </div>
+              </div> -->
+              <a href="#"></a>
+              <input type="submit" class="btn" value="Get Info">
+            </form>
+          </div>
+        
+{% endblock %}
